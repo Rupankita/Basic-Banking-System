@@ -105,7 +105,7 @@ and open the template in the editor.
                 date_default_timezone_set("Asia/Kolkata");
                 $t = date("Y-m-d H:i:s");
     
-                $in_query1 = "insert into  transaction (sender_id, sender_account, receiver_id, receiver_account, amount, transfer_time)
+                $in_query1 = "insert into  transfer (sender_id, sender_account, receiver_id, receiver_account, amount, transfer_time)
                 values ('$s_id','$s_account','$r_id', '$r_account', '$amount', '$t')";
 
     if (mysqli_query($con,$up_query1)) 
@@ -121,30 +121,30 @@ and open the template in the editor.
                 <div class="table-responsive">
                 
                 
-                <h2>Transaction is successful!</h2>
+                <h2>Transaction is successful</h2>
                 <center>
-                <table style="background: wheat;color: blue;padding: 10px;margin-bottom: 20px; text-align: center" border="1">
-                    <tr style="padding: 5px">
+                <table class="table table-bordered table-hover  " style="background-color: #f5e79e;border: 2px black solid; ">
+                    <tr>
                         <td>Sender Name</td>
                         <td><?php echo "$s_name";?></td>
                     </tr>
-                    <tr style="padding: 5px">
+                    <tr>
                         <td>Sender Account No.</td>
                         <td><?php echo "$s_account";?></td>
                     </tr>
-                    <tr style="padding: 5px">
+                    <tr>
                         <td>Receiver Name</td>
                         <td><?php echo "$r_name";?></td>
                     </tr>
-                    <tr style="padding: 5px">
+                    <tr>
                         <td>Receiver Account No.</td>
                         <td><?php echo "$r_account";?></td>
                     </tr>
-                    <tr style="padding: 5px">
+                    <tr>
                         <td>Transfer Amount</td>
                         <td><?php echo "$amount";?></td>
                     </tr>
-                    <tr style="padding: 5px">
+                    <tr>
                         <td>Transfer Time</td>
                         <td><?php echo "$t";?></td>
                     </tr>
