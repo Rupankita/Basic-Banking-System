@@ -6,3 +6,4 @@ Flow: Home page - View all Customer - Transfer Money - Select Customer to Transf
 
 Technology used for Frontend: HTML, Bootstrap, JavaScript
 Backed: PHP, MySQL
+file:///C:/Users/RUPAnkita%20Sarma/Desktop/Screenshot%20(496).png
